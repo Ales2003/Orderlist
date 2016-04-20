@@ -1,5 +1,5 @@
 
-package Entity;
+package entity;
 
 import java.util.Date;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 //класс Заказ товаров
 public class OrderOfProducts {
     //номер заказа =ключ
-    private Integer orderOfProductsId;
+    private Integer id;
     //дата поступления заказа
     private Date receiptDate;
     //лист товаров в заказе
@@ -19,7 +19,7 @@ public class OrderOfProducts {
 
     //конструкторы
     public OrderOfProducts(Integer orderOfProductsId, Date receiptDate, List<ProductsInOrder> productsInOrders) {
-        this.orderOfProductsId = orderOfProductsId;
+        this.id = orderOfProductsId;
         this.receiptDate = receiptDate;
         this.productsInOrders = productsInOrders;
     }
@@ -31,11 +31,11 @@ public class OrderOfProducts {
     //геттеры и сеттеры
 
     public Integer getOrderOfProductsId() {
-        return orderOfProductsId;
+        return id;
     }
 
     public void setOrderOfProductsId(Integer orderOfProductsId) {
-        this.orderOfProductsId = orderOfProductsId;
+        this.id = orderOfProductsId;
     }
 
     public Date getReceiptDate() {

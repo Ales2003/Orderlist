@@ -1,5 +1,5 @@
 
-package Entity;
+package entity;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.List;
 //класс Товар
 public class Product {
     //Id товара = ключ
-    private Integer productId;
+    private Integer id;
     //название товара
     private String nameOfProduct;
     //цена товара
@@ -25,7 +25,7 @@ public class Product {
     //конструкторы
 
     public Product(Integer productId, String nameOfProduct, Integer priceOfProduct, String describtionOfProduct) {
-        this.productId = productId;
+        this.id = productId;
         this.nameOfProduct = nameOfProduct;
         this.priceOfProduct = priceOfProduct;
         this.describtionOfProduct = describtionOfProduct;
@@ -38,11 +38,11 @@ public class Product {
     //геттеры и сеттеры
 
     public Integer getProductId() {
-        return productId;
+        return id;
     }
 
     public void setProductId(Integer productId) {
-        this.productId = productId;
+        this.id = productId;
     }
 
     public String getNameOfProduct() {

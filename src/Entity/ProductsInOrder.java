@@ -1,5 +1,5 @@
 
-package Entity;
+package entity;
 
 /**
  *
@@ -8,7 +8,7 @@ package Entity;
 //класс Товары в заказе
 public class ProductsInOrder {
     //Id товаров в каказе = ключ
-    private Integer productsInOrderId;
+    private Integer id;
    //товар
     private Product product;
     //количество
@@ -19,7 +19,7 @@ public class ProductsInOrder {
     //конструкторы
 
     public ProductsInOrder(Integer productsInOrderId, Product product, Integer quantityOfProducts) {
-        this.productsInOrderId = productsInOrderId;
+        this.id = productsInOrderId;
         this.product = product;
         this.quantityOfProducts = quantityOfProducts;
     }
@@ -31,11 +31,11 @@ public class ProductsInOrder {
     //геттеры и сеттеры
 
     public Integer getProductsInOrderId() {
-        return productsInOrderId;
+        return id;
     }
 
     public void setProductsInOrderId(Integer productsInOrderId) {
-        this.productsInOrderId = productsInOrderId;
+        this.id = productsInOrderId;
     }
 
     public Product getProduct() {
